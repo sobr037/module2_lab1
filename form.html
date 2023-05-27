@@ -7,9 +7,60 @@
       <nav>
         <!-- works like <a href="/index.html">Home</a> -->
         <a href="/">Home</a>
+        <a href="/form.html">Form</a>
       </nav>
     </header>
     <main>
+      <form method="POST" action="http://localhost:3000/profile">
+       <div>
+        <label for="firstname">First name:</label> <!-- Collect First Name  -->
+          <input type="text" id="firstname" name="firstname"><br><br>
+       </div>
+       <div>
+          <label for="lastname">Last name:</label> <!-- Collect Last Name -->
+            <input type="text" id="lastname" name="lastname"><br><br>
+        </div>
+        <div>
+          <div>
+            <label for="agerange">Age Range:</label> <!-- Collect Age Range  -->
+          </div>
+          <label>
+            <input type="radio" name="agerange" value="0-18" required> 0-18 Years
+          </label>
+          <label>
+            <input type="radio" name="agerange" value="18-30" required> 18-30 Years
+          </label>
+          <label>
+            <input type="radio" name="agerange" value="30+" required> 30+ years
+          </label>
+        </div>
+        <div>
+          <div>
+            <label for="marketingpreference">Marketing Preferences:</label> <!-- Collect marketing Consent  -->
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" name="marketingpreference" value="email"> I want to receive Marketing Emails.
+            </label>
+          </div>
+          <div>
+            <label>
+              <input type="checkbox" name="marketingpreference" value="sms"> I want to receive SMS Messages with new offers.
+            </label>
+          </div>
+        </div>
+          <div>
+              <label for="preferredcontact">Preferred method of contact:</label>
+              <select id="preferredcontact" name="preferredcontact" required>
+                <option value="">Select an option</option>
+                <option value="email">Email</option>
+                <option value="sms">SMS Messages</option>
+              </select>
+          </div>
+      
+          <button type="submit">Submit form</button>
+        </form>
+  
     </main>
     <footer>Copyright 2021 &copy;</footer>
   </body>
