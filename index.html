@@ -2,20 +2,121 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="Description of website">
-    <meta name="keywords" content="Website, Awesome, Fun">
-    <meta name="author" content="Sam O'Brien">
+    <meta name="description" content="Description of website"> <!-- meta Description -->
+    <meta name="keywords" content="Website, Awesome, Fun"> <!-- meta Keywords -->
+    <meta name="author" content="Sam O'Brien"> <!-- Site author -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Title</title>
+    <title>Website Title</title> <!-- meta Title -->
+
+    <!-- Page Styles -->
+    <style> 
+      table, th, td {
+          border: 1px solid black;
+      }
+    </style>
+  
   </head>
   <body>
-    <header>
+
+    <header> <!-- Site Header -->
       <nav>
         <!-- works like <a href="/index.html">Home</a> -->
         <a href="/">Home</a>
       </nav>
     </header>
-    <main>
+
+    <main> <!-- Main Content -->
+
+      <h1>Learning All The Colours</h1>
+
+      <article> <!-- Article Tag -->
+        <h2>Most Popular Colours</h2>
+        <div>Blue</div>
+        <div>Yellow</div>
+        <div>Green</div>
+  
+        <span>What is</span>
+        <span>your favourite</span>
+        <span>Colour?</span>
+  
+        <p>
+          <p>
+              p represents paragraph
+            </p>
+            <pre>
+              Text in         a pre element
+              is displayed in a fixed-width
+              font, and it preserves
+              both      spaces and
+              line breaks
+            </pre>        
+        </p>
+  
+        <UL> <!-- Unordered List -->
+          <li>Red</li>
+          <li>Green</li>
+          <li>Black</li>
+          <li>Indigo</li>
+        </UL>
+  
+        <ol> <!-- Ordered List -->
+          <li>Beige</li>
+          <li>Purple</li>
+          <li>White</li>
+          <li>Burnt Umber</li>
+        </ol>
+  
+      </article>
+        
+      <article> <!-- Article Tag -->
+  
+        <table> <!-- Table -->
+            <thead>
+            <tr>
+                <th colspan="2">First header </th>
+                <th>Second header</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>First cell - first row</td>
+                    <td>Second cell - first row</td>
+                    <td>Third cell - first row</td>
+                </tr>
+                <tr>
+                  <td>First cell - second row</td>
+                  <td>Second cell - second row</td>
+                  <td>Third cell - second row</td>
+                </tr>
+                <tr>
+                  <td>First cell - third row</td>
+                  <td>Second cell - third row</td>
+                  <td>Third cell - third row</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <img src="https://picsum.photos/200/300" alt="Placeholder Image" /> <!-- Image -->
+  
+        <video autoplay width="250"> <!-- Video -->
+          <source src="/media/cc0-videos/flower.webm"
+                  type="video/webm">
+          <source src="/media/cc0-videos/flower.mp4"
+                  type="video/mp4">
+          Sorry, your browser doesn't support embedded videos.
+      </video>
+      
+      <!-- Audio Element -->
+      <audio autoplay
+        src="/media/cc0-audio/t-rex-roar.mp3">
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+
+
+
+
+      </article>
     </main>
     <footer>Copyright 2021 &copy;</footer>
   </body>
